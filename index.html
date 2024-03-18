@@ -1,0 +1,83 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+.img {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+
+}
+  img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+</style>
+        </head>
+        <body>
+          <div>
+            <header>
+                <h2>Toys Images</h2>
+                <h6>age : 16-18 month</h6>
+              </header>
+                    <section>  
+                      <div class="img">
+                        <img src="img.png"><img>
+                        <img src="img.png"><img>
+                        <img src="img.png"><img>
+                        <img src="img.png"><img>
+                      </div>
+                    </section>
+              <footer>
+                <p>Footer</p>
+              </footer>
+            </div>   
+        </body>
+    </html>

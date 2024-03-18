@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        .lgbox{
+                height:40px ;
+                width: 100%;
+                background-color: aqua;
+              }
+       .logo{
+            float: left;
+            margin-top: 20px;
+            }
+        .linkbox{
+                height:40px ;
+                width: 100%;
+                background-color: aqua;
+                }
+       .links{
+            float: right;
+            margin-top: -20px;
+             }      
+@media (max-width: 600px) {
+  main,.center,.end,.anima,.myfirst {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .box2,.sell1 {
+    width: 100%;
+    height: auto;
+  }
+}
+.box1{
+    height: 600px;
+    display: block;
+    width: 100%;
+   background-image: url('all.png');
+}
+.box2{
+    height: 300px;
+    display: flex;
+    width: 100%;
+    background-image: url('all.png');
+}
+.box3{
+    height: 320px;
+    display: flex;
+    width: 100%;   
+    background-color: rgb(129, 25, 65);
+}
+.anima {
+  width: 100px;
+  height: 580px;
+  padding: 10px;
+  background-color: red;
+  position: relative;
+  opacity: 0.1;
+  animation: myfirst 9s linear 4s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {background-color:black; left:0px; top:0px;}
+  25%  {background-color:black; left:1160px; top:0px;}
+  50%  {background-color:black; left:1160px; top:0px;}
+  75%  {background-color:black; left:0px; top:0px;}
+  100% {background-color:black; left:0px; top:0px;}
+}
+      .sell1{
+        margin: 50px;
+        word-spacing: 120px;
+      }
+      
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="lgbox">
+            <div class="logo">
+                <img src="logo" alt="logo">
+            </div>
+            </div>
+            <div class="linkbox">
+            <div class="links">
+                <a href="index.html">xyz</a>
+                <a href="index.html">xyz</a>
+                <a href="index.html">xyz</a>
+            </div>
+        </div>
+        <div class="center">
+            <div class="box1">
+              <img class="all" src="all.png" height="100%" width="100%"></img>
+                <div class="anima1">
+                    
+                </div>
+            </div>
+            <div class="box2">
+                
+                <div class="sell1">
+                  <img src="car.png" height="200px" width="200px">
+                  <img src="car.png" height="200px" width="200px">
+                  <img src="car.png" height="200px" width="200px">
+                  <img src="car.png" height="200px" width="200px">
+
+                </div>
+            </div>
+            <div class="box3">
+                <div class="anima2">
+                  </div>
+                <div class="anima3"></div>
+                <div class="anima4"></div>
+            </div>
+        </div>
+        <div class="end"></div>
+    </div>
+
+</body>
+</html>
